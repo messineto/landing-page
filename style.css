@@ -7,7 +7,9 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   background: #fff;
 }
 
@@ -29,12 +31,28 @@ li {
 }
 
 .header {
-  max-width: 900px;
+  max-width: 1050px;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.header-logo {
+  font-size: 0.7em;
+}
+
+.header-logo,
+.hero-right h2 {
+  color: #f9faf8;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
 }
 
 .header-links ul {
@@ -47,16 +65,121 @@ li {
 }
 
 .hero {
+  max-width: 1050px;
   display: flex;
   padding: 80px 0px 80px 0px;
+  gap: 40px;
+}
+
+.hero-right h2 {
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.hero-right button {
+  background: #3882f6;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 8px 32px;
+  margin-top: 16px;
+}
+
+.hero-right p,
+.header-links {
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
 .img-placeholder {
-  height: 200px;
-  width: 400px;
+  height: 250px;
+  width: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1 1 auto;
   background: #6d747d;
   color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content h2 {
+  font-size: 2em;
+  font-weight: bolder;
+  color: #1f2937;
+  text-align: center;
+  padding: 1em;
+}
+
+.content ul {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+
+.content ul li {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+}
+
+.information-area {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  height: 160px;
+  width: 160px;
+  border: 5px solid #3882f6;
+  border-radius: 16px;
+}
+
+.description {
+  color: #616a77;
+  font-size: 1.1em;
+  padding-top: 6px;
+}
+
+.quote-section {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  background: #e5e7eb;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+}
+
+.quote {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.author {
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.quote,
+.author {
+  color: #1f2937;
+  font-size: 36px;
 }
